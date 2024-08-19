@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .weather-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .weather-info h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .weather-info p {
+            margin: 5px 0;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+	    <div class="content">
+	        <h1>Weather App</h1>
+	        <form action="/weather" method="get">
+	            <input type="text" name="city" placeholder="Enter Your City Name">
+	            <button type="submit">Get Weather</button>
+	        </form>
+	        <div th:if="${error}" style="color: red; margin-top: 10px;">
+	            <p th:text="${error}"></p>
+	        </div>
+	        <div class="weather-info" th:if="${location}">
+	            <h2 th:text="'Location: ' + ${location}"></h2>
+	            <p th:text="'Temperature: ' + ${temperature} + '°C'"></p>
+	            <p th:text="'Weather: ' + ${description}"></p>
+	            <p th:text="'Humidity: ' + ${humidity} + '%'"></p>
+	            <p th:text="'Wind Speed: ' + ${windSpeed} + ' m/s'"></p>
+	            <p th:text="'Visibility: ' + ${visibility} + ' km'"></p>
+	        </div>
+	        <footer>
+	            &copy; 2024 Weather App
+	        </footer>
+	    </div>
+	</div>
+
+</body>
+</html>
