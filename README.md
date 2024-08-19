@@ -34,14 +34,15 @@
 # UI View
 
 ## Home Page
-
+![home](https://github.com/user-attachments/assets/ad3b0498-482c-4427-aeec-af160eb6647a)
 
 
 ## Weather Page
-
+![location](https://github.com/user-attachments/assets/d5c1a56b-9150-4a8f-8a21-fe01934908dc)
 
 
 ## When User enter wrong city name
+![wronglocation](https://github.com/user-attachments/assets/15379a60-9672-4c26-b679-84f3cf3a6cc6)
 
 
 
