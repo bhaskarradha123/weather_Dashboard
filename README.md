@@ -34,6 +34,12 @@
 
 ![Spring](https://img.shields.io/static/v1?style=for-the-badge&message=Spring+Tool+Suit&color=6DB33F&logo=Spring&logoColor=FFFFFF&label=)
 
+## API's 🌍
+
+![Static Badge](https://img.shields.io/badge/OpenWeatherMap%20-API-blue)
+![Static Badge](https://img.shields.io/badge/Weather-API-violet)
+
+
 
 # UI View
 
