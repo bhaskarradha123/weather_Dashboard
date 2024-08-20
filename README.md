@@ -28,7 +28,7 @@
 
 ## Development 🔭
 
-![Java](https://img.shields.io/static/v1?style=for-the-badge&message=Open+JDK+14&color=007396&label=)
+![Static Badge](https://img.shields.io/badge/jdk-17-blue)
 
 ## Development Tools 📺
 
